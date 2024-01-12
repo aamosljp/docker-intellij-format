@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* && \
     echo 'Downloading IntelliJ IDEA' && \
-    wget https://download-cf.jetbrains.com/idea/ideaIC-2018.2.5.tar.gz -O /tmp/intellij.tar.gz -q && \
+    wget https://download-cf.jetbrains.com/idea/ideaIU-2023.3.2.tar.gz -O /tmp/intellij.tar.gz -q && \
     echo 'Installing IntelliJ IDEA' && \
     mkdir -p /opt/intellij && \
     tar -xf /tmp/intellij.tar.gz --strip-components=1 -C /opt/intellij && \
